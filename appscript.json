@@ -1,0 +1,24 @@
+{
+  "timeZone": "Africa/Nairobi",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.readonly"
+  ],
+  "gmail": {
+    "name": "Phishing Detection System",
+    "logoUrl": "https://drive.google.com/uc?export=view&id=1qLGfeOPMjsPUFm4ddQsV-uUbQzZbW4Ki",
+    "contextualTriggers": [
+      {
+        "unconditional": {
+        },
+        "onTriggerFunction": "onGmailMessageOpen"
+      }
+    ],
+    "primaryColor": "#4285F4",
+    "secondaryColor": "#EA4335",
+    "authorizationCheckFunction": "getContextualAddOn"
+  }
+}
